@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maxime Luhat — Développeur C++ / C#</title>
+<meta name="description" content="Portfolio de Maxime Luhat — projets réalisés en C++ et C# durant mes années d'études.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     SÉLECTEUR DE LANGUE — flottant, en haut à droite
+     ============================================================ -->
+<div class="lang-switch" role="group" aria-label="Choix de la langue">
+  <button class="lang-btn active" data-lang="fr" aria-pressed="true">FR</button>
+  <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+</div>
+
+<!-- ============================================================
+     BARRE D'ONGLETS DE NAVIGATION — un onglet par année d'étude
+     ============================================================ -->
+<nav class="tabbar" aria-label="Navigation principale">
+  <span class="dots"><span></span><span></span><span></span></span>
+  <button class="tab active" data-target="about">about.cpp</button>
+  <button class="tab" data-target="year1">annee-1.log</button>
+  <button class="tab" data-target="year2">annee-2.log</button>
+  <button class="tab" data-target="year3">annee-3.log</button>
+  <button class="tab" data-target="contact">contact.sh</button>
+</nav>
+
+<main>
+
+  <!-- ============================================================
+       SECTION ABOUT — infos personnelles
+       ============================================================ -->
+  <section id="about">
+    <div class="editor-window">
+      <div class="editor-titlebar">about.cpp</div>
+      <div class="code-body">
+        <div class="line-numbers">
+          <span>1</span><span>2</span><span>3</span><span>4</span>
+          <span>5</span><span>6</span><span>7</span><span>8</span>
+        </div>
+        <div class="code-content"><span class="kw">struct</span> <span class="prop">Developer</span> {
+  <span class="prop">std::string name</span> = <span class="str">"Maxime Luhat"</span>;
+  <span class="prop">std::string role</span> = <span class="str" data-i18n="hero.role">"Développeur C++ / C#"</span>;
+  <span class="prop">std::string location</span> = <span class="str">"France"</span>;
+  <span class="prop">std::vector&lt;std::string&gt; stack</span> = {<span class="str">"C++"</span>, <span class="str">"C#"</span>, <span class="str">".NET"</span>};
+  <span class="prop">std::string bio</span> = <span class="str" data-i18n="hero.bio">"Étudiant développeur, projets réalisés durant mon cursus."</span>;
+};</div>
+      </div>
+    </div>
+
+    <p class="hero-tagline" data-i18n="hero.tagline">
+      Ce portfolio présente les projets que j'ai réalisés durant mes années
+      d'études, classés par année. Chaque projet renvoie vers son dépôt GitHub.
+    </p>
+
+    <div class="cta-row">
+      <a class="btn primary" href="#year1" data-target="year1" data-i18n="hero.ctaProjects">Voir mes projets</a>
+      <a class="btn" href="https://github.com/ton-pseudo" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn" href="#contact" data-target="contact" data-i18n="hero.ctaContact">Me contacter</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ANNÉE 1 — duplique un bloc .commit par projet
+       Le modèle vierge à copier-coller se trouve juste avant la
+       fermeture de cette section (commenté "MODELE").
+       ============================================================ -->
+  <section id="year1">
+    <p class="eyebrow" data-i18n="year1.eyebrow">année 1</p>
+    <h2>git log --annee-1</h2>
+
+    <div class="commit">
+      <div class="commit-hash">commit a1b2c3d</div>
+      <div class="commit-title">Nom du Projet 1</div>
+      <p class="commit-desc" data-i18n="year1.p1.desc">
+        Courte description : ce que fait le projet et ce que tu as appris en le réalisant.
+      </p>
+
+      <!-- Galerie : ajoute autant d'<img> que de captures, plus une vidéo si tu en as une -->
+      <div class="commit-media">
+        <img src="assets/annee1-projet1-1.jpg" alt="Capture du projet 1 - vue 1">
+        <img src="assets/annee1-projet1-2.jpg" alt="Capture du projet 1 - vue 2">
+        <!-- Option A : vidéo hébergée dans le repo (fichier .mp4 léger, quelques Mo max) -->
+        <video controls src="assets/annee1-projet1-demo.mp4"></video>
+        <!-- Option B : vidéo YouTube (recommandé si le fichier est lourd) — remplace VIDEO_ID
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+        -->
+      </div>
+
+      <div class="diffstat">
+        <span class="added">+ C++</span>
+        <span>SFML</span>
+      </div>
+      <div class="commit-links">
+        <a href="https://github.com/ton-pseudo/nom-du-repo" target="_blank" rel="noopener" data-i18n="projects.linkCode">Voir le code →</a>
+      </div>
+    </div>
+
+    <!-- ======================= MODELE — copie ce bloc pour ajouter un projet =======================
+    <div class="commit">
+      <div class="commit-hash">commit xxxxxxx</div>
+      <div class="commit-title">Nom du Projet</div>
+      <p class="commit-desc">Description courte du projet.</p>
+
+      <div class="commit-media">
+        <img src="assets/nom-du-fichier-1.jpg" alt="Description de l'image">
+        <img src="assets/nom-du-fichier-2.jpg" alt="Description de l'image">
+        <video controls src="assets/nom-du-fichier-demo.mp4"></video>
+      </div>
+
+      <div class="diffstat">
+        <span class="added">+ C++</span>
+        <span>Nom de la lib/techno</span>
+      </div>
+      <div class="commit-links">
+        <a href="https://github.com/ton-pseudo/nom-du-repo" target="_blank" rel="noopener">Voir le code →</a>
+      </div>
+    </div>
+    ================================================================================================= -->
+  </section>
+
+  <!-- ============================================================
+       ANNÉE 2 — même principe, duplique un bloc .commit par projet
+       ============================================================ -->
+  <section id="year2">
+    <p class="eyebrow" data-i18n="year2.eyebrow">année 2</p>
+    <h2>git log --annee-2</h2>
+
+    <div class="commit">
+      <div class="commit-hash">commit e4f5g6h</div>
+      <div class="commit-title">Nom du Projet 2</div>
+      <p class="commit-desc" data-i18n="year2.p1.desc">
+        Courte description du projet réalisé en deuxième année.
+      </p>
+      <div class="diffstat">
+        <span class="added">+ C#</span>
+        <span>.NET</span>
+      </div>
+      <div class="commit-links">
+        <a href="https://github.com/ton-pseudo/nom-du-repo" target="_blank" rel="noopener" data-i18n="projects.linkCode">Voir le code →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ANNÉE 3 — même principe, duplique un bloc .commit par projet
+       ============================================================ -->
+  <section id="year3">
+    <p class="eyebrow" data-i18n="year3.eyebrow">année 3</p>
+    <h2>git log --annee-3</h2>
+
+    <div class="commit">
+      <div class="commit-hash">commit i7j8k9l</div>
+      <div class="commit-title">Nom du Projet 3</div>
+      <p class="commit-desc" data-i18n="year3.p1.desc">
+        Courte description du projet le plus récent / le plus abouti.
+      </p>
+      <div class="diffstat">
+        <span class="added">+ C++</span>
+        <span>Moteur / Lib maison</span>
+      </div>
+      <div class="commit-links">
+        <a href="https://github.com/ton-pseudo/nom-du-repo" target="_blank" rel="noopener" data-i18n="projects.linkCode">Voir le code →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION CONTACT — MODIFIE ICI tes liens
+       ============================================================ -->
+  <section id="contact">
+    <p class="eyebrow" data-i18n="contact.eyebrow">connexion</p>
+    <h2>contact.sh</h2>
+
+    <div class="terminal">
+      <div><span class="prompt">$</span> <span class="cmd" data-i18n="contact.cmd">contact --maxime-luhat --status "ouvert aux opportunités"</span></div>
+      <ul>
+        <li><span data-i18n="contact.email">email</span>: <a href="mailto:ton.email@exemple.com">ton.email@exemple.com</a></li>
+        <li>github: <a href="https://github.com/ton-pseudo" target="_blank" rel="noopener">github.com/ton-pseudo</a></li>
+        <li>linkedin: <a href="https://linkedin.com/in/ton-profil" target="_blank" rel="noopener">linkedin.com/in/ton-profil</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>© <span id="year"></span> Maxime Luhat</span>
+  <span data-i18n="footer.built">construit avec HTML, CSS &amp; JS — hébergé sur GitHub Pages</span>
+</footer>
+
+<script src="lang.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
