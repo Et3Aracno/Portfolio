@@ -48,7 +48,6 @@ const translations = {
     "skills.moteurs": "Moteurs",
 
     "contact.eyebrow": "contact",
-    "contact.title": "Discutons de votre projet",
     "contact.desc": "Ouvert aux opportunités, aux stages et aux collaborations. N'hésite pas à me contacter.",
 
     "footer.built": "construit avec HTML, CSS & JS — hébergé sur GitHub Pages"
@@ -99,7 +98,6 @@ const translations = {
     "skills.moteurs": "Engines",
 
     "contact.eyebrow": "contact",
-    "contact.title": "Let's talk about your project",
     "contact.desc": "Open to opportunities, internships and collaborations. Feel free to reach out.",
 
     "footer.built": "built with HTML, CSS & JS — hosted on GitHub Pages"
