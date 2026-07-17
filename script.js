@@ -1,11 +1,7 @@
-// ============================================================
-// 1) ANNÉE DANS LE FOOTER
-// ============================================================
+
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// ============================================================
-// 2) NAVIGATION — clic sur sidebar / topnav + surbrillance au scroll
-// ============================================================
+
 document.querySelectorAll('[data-target]').forEach(link => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
@@ -28,16 +24,10 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: '-40% 0px -50% 0px' });
 sections.forEach(s => sectionObserver.observe(s));
 
-// ============================================================
-// 3) MENU MOBILE (affiché seulement en dessous de 680px)
-// ============================================================
 document.getElementById('menuToggle').addEventListener('click', () => {
   document.querySelector('.topnav').classList.toggle('mobile-open');
 });
 
-// ============================================================
-// 4) FILTRE DE PROJETS PAR ANNÉE
-// ============================================================
 const filterButtons = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
 
@@ -54,9 +44,6 @@ filterButtons.forEach(btn => {
   });
 });
 
-// ============================================================
-// 5) THÈME CLAIR / SOMBRE
-// ============================================================
 function setTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem('portfolio-theme', theme);
@@ -70,10 +57,7 @@ document.getElementById('themeToggle').addEventListener('click', () => {
 const savedTheme = localStorage.getItem('portfolio-theme');
 if (savedTheme) setTheme(savedTheme);
 
-// ============================================================
-// 6) CHANGEMENT DE LANGUE
-//    Les textes traduits viennent de l'objet `translations` (lang.js)
-// ============================================================
+
 function setLg(lang) {
   const dict = translations[lang];
   if (!dict) return;
@@ -104,3 +88,24 @@ const savedLang = localStorage.getItem('portfolio-lang');
 const browserLang = navigator.language.slice(0, 2);
 const initialLang = savedLang || (translations[browserLang] ? browserLang : 'fr');
 setLg(initialLang);
+
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+
+document.addEventListener('click', (e) => {
+  if (e.target.matches('.project-media img')) {
+    lightboxImg.src = e.target.src;
+    lightboxImg.alt = e.target.alt;
+    lightbox.classList.add('open');
+  }
+});
+
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  lightboxImg.src = '';
+}
+
+document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
