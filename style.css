@@ -1,6 +1,4 @@
-/* ============================================================
-   1) VARIABLES — thème sombre (par défaut) et clair
-   ============================================================ */
+
 :root{
   --bg: #0c0c12;
   --bg-elevated: #14141c;
@@ -68,9 +66,7 @@ button{ font-family:inherit; cursor:pointer; }
 
 img, video{ max-width:100%; display:block; }
 
-/* ============================================================
-   2) SIDEBAR — colonne d'icônes fixe, à gauche
-   ============================================================ */
+
 .sidebar{
   position:fixed;
   top:0; left:0; bottom:0;
@@ -107,9 +103,7 @@ img, video{ max-width:100%; display:block; }
 .side-link:hover{ color:var(--text); background:var(--bg-hover); }
 .side-link.active{ color:var(--accent); background:var(--accent-soft); }
 
-/* ============================================================
-   3) TOPBAR — nav horizontale, à droite de la sidebar
-   ============================================================ */
+
 .topbar{
   position:fixed;
   top:0;
@@ -179,9 +173,7 @@ img, video{ max-width:100%; display:block; }
 
 .menu-toggle{ display:none; }
 
-/* ============================================================
-   4) LAYOUT GÉNÉRAL
-   ============================================================ */
+
 main{
   margin-left:var(--sidebar-w);
   padding-top:var(--topbar-h);
@@ -202,9 +194,7 @@ section{ padding:72px 0; }
 }
 h1,h2,h3{ font-family:var(--font-heading); margin:0; }
 
-/* ============================================================
-   5) HERO
-   ============================================================ */
+
 .hero-panel{
   background:var(--bg-elevated);
   border:1px solid var(--border);
@@ -268,9 +258,7 @@ h1,h2,h3{ font-family:var(--font-heading); margin:0; }
 }
 .hero-visual svg{ width:100%; height:100%; display:block; }
 
-/* ============================================================
-   6) PROJETS
-   ============================================================ */
+
 .section-head{
   display:flex;
   align-items:flex-end;
@@ -373,9 +361,7 @@ h1,h2,h3{ font-family:var(--font-heading); margin:0; }
   border-radius:5px; border:1px solid var(--border);
 }
 
-/* ============================================================
-   7) À PROPOS
-   ============================================================ */
+
 .about-panel{
   background:var(--bg-elevated);
   border:1px solid var(--border);
@@ -410,9 +396,7 @@ h1,h2,h3{ font-family:var(--font-heading); margin:0; }
 .stat .num{ font-family:var(--font-heading); font-weight:800; font-size:1.3rem; color:var(--accent-2); }
 .stat .label{ font-size:0.78rem; color:var(--text-muted); margin-top:2px; }
 
-/* ============================================================
-   8) COMPÉTENCES
-   ============================================================ */
+
 .skills-grid{
   display:grid;
   grid-template-columns:repeat(3, 1fr);
@@ -429,9 +413,7 @@ h1,h2,h3{ font-family:var(--font-heading); margin:0; }
 .skill-pills{ display:flex; flex-wrap:wrap; gap:8px; }
 .skill-pills .tag{ font-size:0.78rem; padding:6px 12px; }
 
-/* ============================================================
-   9) CONTACT
-   ============================================================ */
+
 .contact-panel{
   background:var(--bg-elevated);
   border:1px solid var(--border);
@@ -443,9 +425,7 @@ h1,h2,h3{ font-family:var(--font-heading); margin:0; }
 .contact-panel p{ color:var(--text-muted); max-width:50ch; margin:0 auto 26px; }
 .contact-links{ display:flex; justify-content:center; gap:12px; flex-wrap:wrap; }
 
-/* ============================================================
-   10) FOOTER
-   ============================================================ */
+
 footer{
   padding:28px 0 50px;
   font-family:var(--font-mono);
@@ -454,9 +434,7 @@ footer{
   display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
 }
 
-/* ============================================================
-   11) RESPONSIVE
-   ============================================================ */
+
 @media (max-width:960px){
   .hero-panel{ grid-template-columns:1fr; }
   .hero-visual{ display:none; }
@@ -493,6 +471,38 @@ footer{
   .project-grid{ grid-template-columns:1fr; }
   .about-panel{ grid-template-columns:1fr; text-align:center; }
   .about-main{ flex-direction:column; align-items:center; }
+
+
+ 
+.project-media img{ cursor: zoom-in; }
+
+.lightbox{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  z-index: 200;
+}
+.lightbox.open{ display: flex; }
+.lightbox img{
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+.lightbox-close{
+  position: absolute;
+  top: 20px; right: 24px;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--bg-hover);
+  border: 1px solid var(--border);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+}
   .about-main p{ max-width:none; }
   section{ padding:52px 0; }
 }
