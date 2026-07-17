@@ -27,7 +27,7 @@ const translations = {
     "filter.year3": "Année 3",
 
     "year1.p1.desc": "Courte description : ce que fait le projet et ce que tu as appris en le réalisant.",
-    "year2.p1.desc": "Courte description du projet réalisé en deuxième année.",
+    "year2.p1.desc": "Jeu coopératif en local à deux joueurs, où le but est d'enchaîner les épreuves le plus vite possible.",
     "year3.p1.desc": "Courte description du projet le plus récent / le plus abouti.",
 
     "about.eyebrow": "à propos",
@@ -78,7 +78,7 @@ const translations = {
     "filter.year3": "Year 3",
 
     "year1.p1.desc": "Short description: what the project does and what you learned building it.",
-    "year2.p1.desc": "Short description of the project built in second year.",
+    "year2.p1.desc": "A local co-op game for two players, where the goal is to clear the challenges as fast as possible.",
     "year3.p1.desc": "Short description of the most recent / most polished project.",
 
     "about.eyebrow": "about",
