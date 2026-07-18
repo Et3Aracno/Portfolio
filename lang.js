@@ -30,8 +30,9 @@ const translations = {
     "year1.p1.desc": "Courte description : ce que fait le projet et ce que tu as appris en le réalisant.",
     "year2.p1.desc": "Jeu coopératif en local à deux joueurs, où le but est d'enchaîner les épreuves le plus vite possible.",
     "year3.p1.desc": "Courte description du projet le plus récent / le plus abouti.",
-
     "other.p1.desc": "Courte description : un projet réalisé en dehors du cursus, par intérêt personnel.",
+
+     "year2.p2.desc":"Jeu solo de type endless runner où l'objectif est d'obtenir le meilleur score possible."
 
     "about.eyebrow": "à propos",
     "about.title": "Étudiant développeur passionné par les systèmes performants.",
@@ -83,8 +84,10 @@ const translations = {
     "year1.p1.desc": "Short description: what the project does and what you learned building it.",
     "year2.p1.desc": "A local co-op game for two players, where the goal is to clear the challenges as fast as possible.",
     "year3.p1.desc": "Short description of the most recent / most polished project.",
-
     "other.p1.desc": "Short description: a project built outside of school, out of personal interest.",
+
+    "year2.p2.desc":"A single-player endless runner where the goal is to achieve the highest score possible."
+
 
     "about.eyebrow": "about",
     "about.title": "Student developer passionate about performant systems.",
