@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maxime Luhat — Développeur C++ / C#</title>
+<meta name="description" content="Portfolio de Maxime Luhat — projets réalisés en C++ et C# durant mes années d'études.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     SIDEBAR — icônes de navigation, à gauche
+     ============================================================ -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg>
+  </div>
+  <nav class="sidebar-nav" aria-label="Navigation rapide">
+    <a class="side-link active" href="#hero" data-target="hero" aria-label="Accueil">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
+    </a>
+    <a class="side-link" href="#about" data-target="about" aria-label="À propos">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+    </a>
+    <a class="side-link" href="#projects" data-target="projects" aria-label="Projets">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h5l2 2h11v10H3z"/></svg>
+    </a>
+    <a class="side-link" href="#skills" data-target="skills" aria-label="Compétences">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M8.5 13.5 6 22l6-3 6 3-2.5-8.5"/></svg>
+    </a>
+    <a class="side-link" href="#contact" data-target="contact" aria-label="Contact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+    </a>
+  </nav>
+</aside>
+
+<!-- ============================================================
+     TOPBAR — logo texte, navigation, thème, langue
+     ============================================================ -->
+<header class="topbar">
+  <div class="brand">MAXIME LUHAT</div>
+
+  <nav class="topnav" aria-label="Navigation principale">
+    <a href="#hero" data-target="hero" class="active" data-i18n="nav.home">Accueil</a>
+    <a href="#about" data-target="about" data-i18n="nav.about">À propos</a>
+    <a href="#projects" data-target="projects" data-i18n="nav.projects">Projets</a>
+    <a href="#skills" data-target="skills" data-i18n="nav.skills">Compétences</a>
+    <a href="#contact" data-target="contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+
+  <div class="topbar-actions">
+    <div class="lang-group" role="group" aria-label="Choix de la langue">
+      <button class="lang-btn active" data-lang="fr" aria-pressed="true">FR</button>
+      <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button class="icon-btn" id="themeToggle" aria-label="Changer de thème">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section id="hero">
+      <div class="hero-panel">
+        <div class="hero-text">
+          <p class="eyebrow" data-i18n="hero.eyebrow">étudiant développeur c++ / c#</p>
+          <h1 class="hero-title">
+            <span data-i18n="hero.titleLine1">Je code des</span><br>
+            <span class="accent" data-i18n="hero.titleLine2">systèmes robustes.</span>
+          </h1>
+          <p class="hero-desc" data-i18n="hero.desc">
+            Étudiant en développement, passionné par le C++ et le C#. J'aime comprendre
+            comment les systèmes fonctionnent en profondeur et construire des outils fiables.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#projects" data-target="projects" data-i18n="hero.ctaProjects">
+              Voir mes projets
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn" href="#contact" data-target="contact" data-i18n="hero.ctaContact">
+              Me contacter
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </a>
+          </div>
+
+          <div class="social-row">
+            <a href="https://github.com/Et3Aracno" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5v-1.94c-2.78.62-3.37-1.36-3.37-1.36-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9v2.82c0 .28.18.61.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/maxime-luhat-8058b531a" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.55 4.78 5.87V21h-4v-5.7c0-1.36-.02-3.1-1.9-3.1-1.9 0-2.2 1.47-2.2 3v5.8H9z"/></svg>
+            </a>
+            <a href="mailto:luhatmaxime@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 500 420" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#7c5cff" stop-opacity="0.55"/>
+                <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <g opacity="0.5" stroke="#7c5cff" stroke-width="1">
+              <line x1="60" y1="330" x2="180" y2="230"/>
+              <line x1="180" y1="230" x2="320" y2="270"/>
+              <line x1="180" y1="230" x2="220" y2="110"/>
+              <line x1="320" y1="270" x2="430" y2="180"/>
+              <line x1="220" y1="110" x2="340" y2="80"/>
+              <line x1="220" y1="110" x2="120" y2="70"/>
+              <line x1="320" y1="270" x2="300" y2="380"/>
+            </g>
+            <g fill="#a78bfa">
+              <circle cx="60" cy="330" r="6"/>
+              <circle cx="180" cy="230" r="9"/>
+              <circle cx="320" cy="270" r="7"/>
+              <circle cx="430" cy="180" r="5"/>
+              <circle cx="220" cy="110" r="8"/>
+              <circle cx="340" cy="80" r="5"/>
+              <circle cx="120" cy="70" r="5"/>
+              <circle cx="300" cy="380" r="5"/>
+            </g>
+            <circle cx="250" cy="210" r="180" fill="url(#g1)"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJETS — filtrable par année
+         ============================================================ -->
+    <section id="projects" class="section-border">
+      <p class="eyebrow" data-i18n="projects.eyebrow">mes projets</p>
+      <div class="section-head">
+        <h2 data-i18n="projects.title">Une sélection de mes réalisations</h2>
+      </div>
+
+      <div class="filter-row" role="group" aria-label="Filtrer par année">
+        <button class="filter-btn active" data-year="all" data-i18n="filter.all">Tous</button>
+        <button class="filter-btn" data-year="1" data-i18n="filter.year1">Année 1</button>
+        <button class="filter-btn" data-year="2" data-i18n="filter.year2">Année 2</button>
+        <button class="filter-btn" data-year="3" data-i18n="filter.year3">Année 3</button>
+        <button class="filter-btn" data-year="autre" data-i18n="filter.other">Autres projets</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+
+        <!-- Projet — Année 1 -->
+        <article class="project-card" data-year="1">
+          <div class="project-thumb">
+            <img src="assets/annee1-projet1-1.jpg" alt="Capture du projet 1">
+            <span class="badge">C++ / SFML</span>
+            <a class="ext-link" href="https://github.com/Et3Aracno/Maxime-Luhat-Multi.git" target="_blank" rel="noopener" aria-label="Voir le dépôt GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+          <div class="project-body">
+            <h3>Nom du Projet 1</h3>
+            <p data-i18n="year1.p1.desc">Courte description : ce que fait le projet et ce que tu as appris en le réalisant.</p>
+            <div class="tag-row">
+              <span class="tag">C++</span>
+              <span class="tag">SFML</span>
+            </div>
+            <details>
+              <summary class="media-toggle" data-i18n="projects.gallery">Voir la galerie</summary>
+              <div class="project-media">
+                <img src="assets/annee1-projet1-2.jpg" alt="Capture du projet 1 - vue 2">
+                <video controls src="assets/annee1-projet1-demo.mp4"></video>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- Projet — Année 2 -->
+        <article class="project-card" data-year="2">
+          <div class="project-thumb">
+            <img src="Assets/Map-2.png" alt="Map picture">
+            <span class="badge">C++ /BLUEPRINT /UE </span>
+            <a class="ext-link" href="https://github.com/Et3Aracno/Maxime-Luhat-Multi.git" target="_blank" rel="noopener" aria-label="Voir le dépôt GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+          <div class="project-body">
+            <h3>Steel Advance</h3>
+            <p data-i18n="year2.p1.desc">Jeu coopératif en local à deux joueurs, où le but est d'enchaîner les épreuves le plus vite possible.</p>
+            <div class="tag-row">
+              <span class="tag">C++</span>
+              <span class="tag">BLUEPRINT</span>
+               <span class="tag">Unreal Engine</span>
+            </div>
+            <details>
+              <summary class="media-toggle" data-i18n="projects.gallery">Voir la galerie</summary>
+              <div class="project-media">
+                    <video src="Assets/DEMO-MultiCoop.mp4" controls width="500"></video>
+                   <video src="Assets/Skin-Demo.mp4" controls width="500"></video>
+                    <img src="Assets/Map-1.png" alt="Map part 1" width="500" >
+                    <img src="Assets/Skins.png" alt="Skin Preview Picture" width="500">
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- Projet — Année 3 -->
+        <article class="project-card" data-year="3">
+          <div class="project-thumb">
+            <img src="assets/annee3-projet1-1.jpg" alt="Capture du projet 3">
+            <span class="badge">C++</span>
+            <a class="ext-link" href="https://github.com/ton-pseudo/nom-du-repo" target="_blank" rel="noopener" aria-label="Voir le dépôt GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+          <div class="project-body">
+            <h3>Nom du Projet 3</h3>
+            <p data-i18n="year3.p1.desc">Courte description du projet le plus récent / le plus abouti.</p>
+            <div class="tag-row">
+              <span class="tag">C++</span>
+              <span class="tag">Moteur maison</span>
+            </div>
+            <details>
+              <summary class="media-toggle" data-i18n="projects.gallery">Voir la galerie</summary>
+              <div class="project-media">
+                <video controls src="assets/annee3-projet1-demo.mp4"></video>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- Projet — Autres projets (perso, hors cursus) -->
+        <article class="project-card" data-year="autre">
+          <div class="project-thumb">
+            <img src="assets/autre-projet1-1.jpg" alt="Capture du projet perso">
+            <span class="badge">C++</span>
+            <a class="ext-link" href="https://github.com/ton-pseudo/nom-du-repo" target="_blank" rel="noopener" aria-label="Voir le dépôt GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+          <div class="project-body">
+            <h3>Nom du Projet Perso</h3>
+            <p data-i18n="other.p1.desc">Courte description : un projet réalisé en dehors du cursus, par intérêt personnel.</p>
+            <div class="tag-row">
+              <span class="tag">C++</span>
+            </div>
+            <details>
+              <summary class="media-toggle" data-i18n="projects.gallery">Voir la galerie</summary>
+              <div class="project-media">
+                <img src="assets/autre-projet1-2.jpg" alt="Capture du projet perso - vue 2">
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- ======================= MODELE — copie cet <article> pour ajouter un projet =======================
+        <article class="project-card" data-year="1">
+          <div class="project-thumb">
+            <img src="assets/nom-du-fichier-1.jpg" alt="Description de l'image">
+            <span class="badge">C++ / SFML</span>
+            <a class="ext-link" href="https://github.com/ton-pseudo/nom-du-repo" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+          <div class="project-body">
+            <h3>Nom du Projet</h3>
+            <p>Description courte du projet.</p>
+            <div class="tag-row">
+              <span class="tag">C++</span>
+              <span class="tag">Nom de la lib/techno</span>
+            </div>
+            <details>
+              <summary class="media-toggle">Voir la galerie</summary>
+              <div class="project-media">
+                <img src="assets/nom-du-fichier-2.jpg" alt="...">
+                <video controls src="assets/nom-du-fichier-demo.mp4"></video>
+              </div>
+            </details>
+          </div>
+        </article>
+        Change data-year="1" en "2", "3" ou "autre" selon la catégorie concernée.
+        ======================================================================================================= -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         À PROPOS
+         ============================================================ -->
+    <section id="about" class="section-border">
+      <div class="about-panel">
+        <div class="about-main">
+          <div class="avatar"><div class="avatar-inner">ML</div></div>
+          <div>
+            <p class="eyebrow" data-i18n="about.eyebrow">à propos</p>
+            <h3 data-i18n="about.title">Étudiant développeur passionné par les systèmes performants.</h3>
+            <p data-i18n="about.desc">Passionné par la programmation bas niveau et la logique des systèmes, j'aime comprendre comment les choses fonctionnent vraiment et construire des outils solides.</p>
+            <a class="btn" href="mailto:luhatmaxime@gmail.com" data-i18n="about.cta">
+              En savoir plus sur moi
+            </a>
+          </div>
+        </div>
+
+        <div class="stat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+          <div class="num">6+</div>
+          <div class="label" data-i18n="about.stat1">Projets réalisés</div>
+        </div>
+        <div class="stat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M6 10v6c0 1.5 3 3 6 3s6-1.5 6-3v-6"/></svg>
+          <div class="num">2</div>
+          <div class="label" data-i18n="about.stat2">Années d'études</div>
+        </div>
+        <div class="stat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16"/></svg>
+          <div class="num" data-i18n="about.stat3num">Étudiant</div>
+          <div class="label" data-i18n="about.stat3">En programmation</div>
+        </div>
+        <div class="stat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6M10 22h4M12 2a6 6 0 0 0-4 10.5c.6.6 1 1.4 1 2.5h6c0-1.1.4-1.9 1-2.5A6 6 0 0 0 12 2z"/></svg>
+          <div class="num" data-i18n="about.stat4num">Passionné</div>
+          <div class="label" data-i18n="about.stat4">Par les systèmes performants</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         COMPÉTENCES
+         ============================================================ -->
+    <section id="skills" class="section-border">
+      <p class="eyebrow" data-i18n="skills.eyebrow">compétences</p>
+      <div class="section-head">
+        <h2 data-i18n="skills.title">Langages et outils que j'utilise</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 data-i18n="skills.langages">Langages</h3>
+          <div class="skill-pills">
+            <span class="tag">C++</span>
+            <span class="tag">C#</span>
+            <span class="tag">Java</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 data-i18n="skills.outils">Outils &amp; bibliothèques</h3>
+          <div class="skill-pills">
+            <span class="tag">Visual Studio</span>
+            <span class="tag">Git</span>
+            <span class="tag">SFML</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 data-i18n="skills.moteurs">Moteurs</h3>
+          <div class="skill-pills">
+            <span class="tag">Unreal Engine</span>
+            <span class="tag">Unity</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+         ============================================================ -->
+    <section id="contact" class="section-border">
+      <div class="contact-panel">
+        <h2 class="eyebrow" data-i18n="contact.eyebrow">contact</h2>
+        <p data-i18n="contact.desc">Ouvert aux opportunités, aux stages et aux collaborations. N'hésite pas à me contacter.</p>
+        <div class="contact-links">
+          <a class="btn primary" href="luhatmaxime@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            luhatmaxime@gmail.com
+          </a>
+          <a class="btn" href="https://github.com/Et3Aracno" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn" href="https://linkedin.com/in/maxime-luhat-8058b531a" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; width:100%;">
+    <span>© <span id="year"></span> Maxime Luhat</span>
+    <span data-i18n="footer.built">construit avec HTML, CSS &amp; JS — hébergé sur GitHub Pages</span>
+  </div>
+</footer>
+     
+<script src="lang.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
