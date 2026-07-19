@@ -32,9 +32,9 @@ const translations = {
     "year3.p1.desc": "Courte description du projet le plus récent / le plus abouti.",
     "other.p1.desc": "Courte description : un projet réalisé en dehors du cursus, par intérêt personnel.",
    
-     "year2.p2.desc":"Jeu solo de type endless runner hardcore où l'objectif est d'obtenir le meilleur score possible."
-     "year2.p3.desc":"Jeu solo de type endless runner horizontal où l'objectif est d'obtenir le meilleur score possible tout en conservant le plus de points de vie possible."
-     "year2.p4.desc":"Jeu solo de type arena shooter où l'objectif est de vaincre toutes les vagues d'ennemis ainsi que le boss final."
+     "year2.p2.desc":"Jeu solo de type endless runner hardcore où l'objectif est d'obtenir le meilleur score possible.",
+     "year2.p3.desc":"Jeu solo de type endless runner horizontal où l'objectif est d'obtenir le meilleur score possible tout en conservant le plus de points de vie possible.",
+     "year2.p4.desc":"Jeu solo de type arena shooter où l'objectif est de vaincre toutes les vagues d'ennemis ainsi que le boss final.",
 
 
     "about.eyebrow": "à propos",
@@ -89,9 +89,9 @@ const translations = {
     "year3.p1.desc": "Short description of the most recent / most polished project.",
     "other.p1.desc": "Short description: a project built outside of school, out of personal interest.",
 
-   "year2.p2.desc":"A hardcore single-player endless runner where the goal is to achieve the highest score possible."
-   "year2.p3.desc":"A side-scrolling single-player endless runner where the goal is to achieve the highest score possible while keeping as much health as possible."
-   "year2.p4.desc":"A single-player arena shooter where the goal is to survive every wave of enemies and defeat the final boss."
+   "year2.p2.desc":"A hardcore single-player endless runner where the goal is to achieve the highest score possible.",
+   "year2.p3.desc":"A side-scrolling single-player endless runner where the goal is to achieve the highest score possible while keeping as much health as possible.",
+   "year2.p4.desc":"A single-player arena shooter where the goal is to survive every wave of enemies and defeat the final boss.",
 
     "about.eyebrow": "about",
     "about.title": "Student developer passionate about performant systems.",
