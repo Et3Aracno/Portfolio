@@ -39,7 +39,7 @@ const translations = {
 
     "about.eyebrow": "à propos",
     "about.title": "Étudiant développeur passionné par les systèmes performants.",
-    "about.desc": "Passionné par la programmation bas niveau et la logique des systèmes, j'aime comprendre comment les choses fonctionnent vraiment et construire des outils solides.",
+    "about.desc": "Passionné par la programmation et la logique des systèmes, j'aime comprendre leur fonctionnement dans son ensemble et développer des programmes efficaces et optimisés.",
     "about.cta": "En savoir plus sur moi",
     "about.stat1": "Projets réalisés",
     "about.stat2": "Années d'études",
@@ -95,7 +95,7 @@ const translations = {
 
     "about.eyebrow": "about",
     "about.title": "Student developer passionate about performant systems.",
-    "about.desc": "Passionate about low-level programming and system design, I enjoy understanding how things really work and building solid tools.",
+    "about.desc": "Passionate about programming and system design, I enjoy understanding how systems work at a deep level and developing efficient, high-performance, and optimized solutions.",
     "about.cta": "Learn more about me",
     "about.stat1": "Projects built",
     "about.stat2": "Years of study",
