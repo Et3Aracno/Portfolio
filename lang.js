@@ -18,7 +18,6 @@ const translations = {
     "hero.ctaContact": "Me contacter",
 
     "projects.eyebrow": "mes projets",
-    "projects.title": "Une sélection de mes projets",
     "projects.gallery": "Voir la galerie",
 
     "filter.all": "Tous",
@@ -75,7 +74,6 @@ const translations = {
     "hero.ctaContact": "Get in touch",
 
     "projects.eyebrow": "my projects",
-    "projects.title": "A Selection of My Projects",
     "projects.gallery": "View gallery",
 
     "filter.all": "All",
