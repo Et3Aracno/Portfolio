@@ -12,13 +12,13 @@ const translations = {
 
     "hero.eyebrow": "étudiant développeur c++ / c#",
     "hero.titleLine1": "Je code des",
-    "hero.titleLine2": "systèmes robustes.",
-    "hero.desc": "Étudiant en développement, passionné par le C++ et le C#. J'aime comprendre comment les systèmes fonctionnent en profondeur et construire des outils fiables.",
+    "hero.titleLine2": "systèmes efficaces et modulaires.",
+    "hero.desc": "Étudiant en développement, passionné par le C++ et le C#. J'aime comprendre le fonctionnement des systèmes en profondeur et développer des programmes fiables, performants et maintenables dans le temps.J'apprécie également étudier et analyser la complexité des logiques d'intelligence artificielle, en particulier celles des RTS.",
     "hero.ctaProjects": "Voir mes projets",
     "hero.ctaContact": "Me contacter",
 
     "projects.eyebrow": "mes projets",
-    "projects.title": "Une sélection de mes réalisations",
+    "projects.title": "Une sélection de mes projets",
     "projects.gallery": "Voir la galerie",
 
     "filter.all": "Tous",
@@ -38,9 +38,9 @@ const translations = {
 
 
     "about.eyebrow": "à propos",
-    "about.title": "Étudiant développeur passionné par les systèmes performants.",
-    "about.desc": "Passionné par la programmation et la logique des systèmes, j'aime comprendre leur fonctionnement dans son ensemble et développer des programmes efficaces et optimisés.",
-    "about.cta": "En savoir plus sur moi",
+    "about.title": "Étudiant développeur de jeux vidéo",
+    "about.desc": "Passionné par la programmation et la logique des systèmes, j'aime analyser et comprendre leur fonctionnement en profondeur afin de concevoir des programmes efficaces, optimisés et maintenables.",
+    "about.cta": "Prenez contact avec moi pour plus d'informations.",
     "about.stat1": "Projets réalisés",
     "about.stat2": "Années d'études",
     "about.stat3num": "Étudiant",
@@ -55,7 +55,7 @@ const translations = {
     "skills.moteurs": "Moteurs",
 
     "contact.eyebrow": "contact",
-    "contact.desc": "Ouvert aux opportunités, aux stages et aux collaborations. N'hésite pas à me contacter.",
+    "contact.desc": "Ouvert aux opportunités, aux stages, aux alternances ainsi qu'à toute autre proposition professionnelle. N'hésitez pas à me contacter.",
 
     "footer.built": "construit avec HTML, CSS & JS — hébergé sur GitHub Pages"
   },
@@ -68,14 +68,14 @@ const translations = {
     "nav.contact": "Contact",
 
     "hero.eyebrow": "c++ / c# student developer",
-    "hero.titleLine1": "I build",
-    "hero.titleLine2": "robust systems.",
-    "hero.desc": "Development student, passionate about C++ and C#. I love understanding how systems work under the hood and building reliable tools.",
+    "hero.titleLine1": "I design",
+    "hero.titleLine2": "efficient and modular systems.",
+    "hero.desc": "Computer science student passionate about C++ and C#. I enjoy understanding how systems work in depth and developing reliable, high-performance, and maintainable software over time. I also enjoy studying and analyzing the complexity of artificial intelligence systems, particularly those used in RTS games.",
     "hero.ctaProjects": "View my projects",
     "hero.ctaContact": "Get in touch",
 
     "projects.eyebrow": "my projects",
-    "projects.title": "A selection of my work",
+    "projects.title": "A Selection of My Projects",
     "projects.gallery": "View gallery",
 
     "filter.all": "All",
@@ -94,9 +94,9 @@ const translations = {
    "year2.p4.desc":"A single-player arena shooter where the goal is to survive every wave of enemies and defeat the final boss.",
 
     "about.eyebrow": "about",
-    "about.title": "Student developer passionate about performant systems.",
-    "about.desc": "Passionate about programming and system design, I enjoy understanding how systems work at a deep level and developing efficient, high-performance, and optimized solutions.",
-    "about.cta": "Learn more about me",
+    "about.title": "Student Game Developer",
+    "about.desc": "Passionate about programming and system logic, I enjoy analyzing and deeply understanding how systems work in order to design efficient, optimized, and maintainable software.",
+    "about.cta": "Feel free to contact me for more information.",
     "about.stat1": "Projects built",
     "about.stat2": "Years of study",
     "about.stat3num": "Student",
@@ -111,7 +111,7 @@ const translations = {
     "skills.moteurs": "Engines",
 
     "contact.eyebrow": "contact",
-    "contact.desc": "Open to opportunities, internships and collaborations. Feel free to reach out.",
+    "contact.desc": "Open to job opportunities, internships, apprenticeships, and any other professional opportunities. Feel free to get in touch.",
 
     "footer.built": "built with HTML, CSS & JS — hosted on GitHub Pages"
   }
