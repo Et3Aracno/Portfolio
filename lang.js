@@ -11,7 +11,7 @@ const translations = {
     "nav.contact": "Contact",
 
     "hero.eyebrow": "étudiant développeur c++ / c#",
-    "hero.titleLine1": "Je code des",
+    "hero.titleLine1": "Je programme des",
     "hero.titleLine2": "systèmes efficaces et modulaires.",
     "hero.desc": "Étudiant en développement, passionné par le C++ et le C#. J'aime comprendre le fonctionnement des systèmes en profondeur et développer des programmes fiables, performants et maintenables dans le temps.J'apprécie également étudier et analyser la complexité des logiques d'intelligence artificielle, en particulier celles des RTS.",
     "hero.ctaProjects": "Voir mes projets",
@@ -66,7 +66,7 @@ const translations = {
     "nav.contact": "Contact",
 
     "hero.eyebrow": "c++ / c# student developer",
-    "hero.titleLine1": "I design",
+    "hero.titleLine1": "I code",
     "hero.titleLine2": "efficient and modular systems.",
     "hero.desc": "Computer science student passionate about C++ and C#. I enjoy understanding how systems work in depth and developing reliable, high-performance, and maintainable software over time. I also enjoy studying and analyzing the complexity of artificial intelligence systems, particularly those used in RTS games.",
     "hero.ctaProjects": "View my projects",
