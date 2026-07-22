@@ -26,14 +26,15 @@ const translations = {
     "filter.year3": "Année 3",
     "filter.other": "Autres projets",
 
-    "year1.p1.desc": "Courte description : ce que fait le projet et ce que tu as appris en le réalisant.",
+    "year1.p1.desc": "Jeu solo mettant en œuvre différents comportements d’intelligence artificielle, notamment les Behavior Trees (BT), les Finite State Machines (FSM) et le pathfinding.",
     "year2.p1.desc": "Jeu coopératif en local à deux joueurs, où le but est d'enchaîner les épreuves le plus vite possible.",
     "year3.p1.desc": "Courte description du projet le plus récent / le plus abouti.",
     "other.p1.desc": "Roguelike développé dans le cadre d'une Game Jam, où le joueur doit éliminer un maximum d'ennemis afin de gagner de l'argent à dépenser dans le casino pour obtenir des améliorations.",
-   
-     "year2.p2.desc":"Jeu solo de type endless runner hardcore où l'objectif est d'obtenir le meilleur score possible.",
-     "year2.p3.desc":"Jeu solo de type endless runner horizontal où l'objectif est d'obtenir le meilleur score possible tout en conservant le plus de points de vie possible.",
-     "year2.p4.desc":"Jeu solo de type arena shooter où l'objectif est de vaincre toutes les vagues d'ennemis ainsi que le boss final.",
+     
+    "year1.p2.desc": "Jeu solo d'arcade où le but est d'esquiver les bombes tombant du ciel afin d'obtenir le meilleur score possible.",
+    "year2.p2.desc":"Jeu solo de type endless runner hardcore où l'objectif est d'obtenir le meilleur score possible.",
+    "year2.p3.desc":"Jeu solo de type endless runner horizontal où l'objectif est d'obtenir le meilleur score possible tout en conservant le plus de points de vie possible.",
+    "year2.p4.desc":"Jeu solo de type arena shooter où l'objectif est de vaincre toutes les vagues d'ennemis ainsi que le boss final.",
 
 
     "about.eyebrow": "à propos",
@@ -81,11 +82,12 @@ const translations = {
     "filter.year3": "Year 3",
     "filter.other": "Other projects",
 
-    "year1.p1.desc": "Short description: what the project does and what you learned building it.",
+    "year1.p1.desc": "Single-player game showcasing different artificial intelligence behaviors, including Behavior Trees (BT), Finite State Machines (FSM), and pathfinding.",
     "year2.p1.desc": "A local co-op game for two players, where the goal is to clear the challenges as fast as possible.",
     "year3.p1.desc": "Short description of the most recent / most polished project.",
     "other.p1.desc": "A roguelike created during a Game Jam, where players earn money by defeating enemies and spend it in the casino to unlock upgrades.",
 
+   "year1.p2.desc": "A single-player arcade game where the goal is to dodge falling bombs and achieve the highest score possible.",
    "year2.p2.desc":"A hardcore single-player endless runner where the goal is to achieve the highest score possible.",
    "year2.p3.desc":"A side-scrolling single-player endless runner where the goal is to achieve the highest score possible while keeping as much health as possible.",
    "year2.p4.desc":"A single-player arena shooter where the goal is to survive every wave of enemies and defeat the final boss.",
