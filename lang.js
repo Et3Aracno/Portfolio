@@ -23,12 +23,12 @@ const translations = {
     "filter.all": "Tous",
     "filter.year1": "Année 1",
     "filter.year2": "Année 2",
-    "filter.year3": "Année 3",
+    /*"filter.year3": "Année 3",*/
     "filter.other": "Autres projets",
 
     "year1.p1.desc": "Jeu solo mettant en œuvre différents comportements d’intelligence artificielle, notamment les Behavior Trees (BT), les Finite State Machines (FSM) et le pathfinding.",
     "year2.p1.desc": "Jeu coopératif en local à deux joueurs, où le but est d'enchaîner les épreuves le plus vite possible.",
-    "year3.p1.desc": "Courte description du projet le plus récent / le plus abouti.",
+    /*"year3.p1.desc": "Courte description du projet le plus récent / le plus abouti.",*/
     "other.p1.desc": "Roguelike développé dans le cadre d'une Game Jam, où le joueur doit éliminer un maximum d'ennemis afin de gagner de l'argent à dépenser dans le casino pour obtenir des améliorations.",
      
     "year1.p2.desc": "Jeu solo d'arcade où le but est d'esquiver les bombes tombant du ciel afin d'obtenir le meilleur score possible.",
@@ -79,12 +79,12 @@ const translations = {
     "filter.all": "All",
     "filter.year1": "Year 1",
     "filter.year2": "Year 2",
-    "filter.year3": "Year 3",
+    /*"filter.year3": "Year 3",*/
     "filter.other": "Other projects",
 
     "year1.p1.desc": "Single-player game showcasing different artificial intelligence behaviors, including Behavior Trees (BT), Finite State Machines (FSM), and pathfinding.",
     "year2.p1.desc": "A local co-op game for two players, where the goal is to clear the challenges as fast as possible.",
-    "year3.p1.desc": "Short description of the most recent / most polished project.",
+    /*"year3.p1.desc": "Short description of the most recent / most polished project.",*/
     "other.p1.desc": "A roguelike created during a Game Jam, where players earn money by defeating enemies and spend it in the casino to unlock upgrades.",
 
    "year1.p2.desc": "A single-player arcade game where the goal is to dodge falling bombs and achieve the highest score possible.",
