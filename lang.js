@@ -36,6 +36,7 @@ const translations = {
     "year2.p2.desc":"Jeu solo de type endless runner hardcore où l'objectif est d'obtenir le meilleur score possible.",
     "year2.p3.desc":"Jeu solo de type endless runner horizontal où l'objectif est d'obtenir le meilleur score possible tout en conservant le plus de points de vie possible.",
     "year2.p4.desc":"Jeu solo de type arena shooter où l'objectif est de vaincre toutes les vagues d'ennemis ainsi que le boss final.",
+    "year2.p5.desc":"Moteur de jeu 3D développé en équipe permettant de créer et exécuter des jeux à partir d'une architecture modulaire en C++ et DirectX 11.",
 
 
     "about.eyebrow": "à propos",
@@ -84,16 +85,19 @@ const translations = {
     "filter.other": "Other projects",
 
     "year1.p1.desc": "Single-player game showcasing different artificial intelligence behaviors, including Behavior Trees (BT), Finite State Machines (FSM), and pathfinding.",
-    "year2.p1.desc": "A local co-op game for two players, where the goal is to clear the challenges as fast as possible.",
+    "year1.p2.desc": "A single-player arcade game where the goal is to dodge falling bombs and achieve the highest score possible.",
+   
     /*"year3.p1.desc": "Short description of the most recent / most polished project.",*/
     "other.p1.desc": "A roguelike created during a Game Jam, where players earn money by defeating enemies and spend it in the casino to unlock upgrades.",
     "other.p2.desc": "Earniverse is an open-world Metaverse focused on exploration and construction, and compatible with virtual reality (VR). During my internship, I was responsible for designing and implementing traps within the existing construction system.",
 
-   "year1.p2.desc": "A single-player arcade game where the goal is to dodge falling bombs and achieve the highest score possible.",
+   "year2.p1.desc": "A local co-op game for two players, where the goal is to clear the challenges as fast as possible.",
    "year2.p2.desc":"A hardcore single-player endless runner where the goal is to achieve the highest score possible.",
    "year2.p3.desc":"A side-scrolling single-player endless runner where the goal is to achieve the highest score possible while keeping as much health as possible.",
    "year2.p4.desc":"A single-player arena shooter where the goal is to survive every wave of enemies and defeat the final boss.",
+   "year2.p5.desc":"3D game engine developed as a team project, featuring a modular architecture built with C++ and DirectX 11.",
 
+     
     "about.eyebrow": "about",
     "about.title": "Student Game Developer",
     "about.desc": "Passionate about programming and system logic, I enjoy analyzing and deeply understanding how systems work in order to design efficient, optimized, and maintainable software.",
