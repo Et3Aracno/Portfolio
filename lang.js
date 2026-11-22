@@ -49,8 +49,6 @@ const translations = {
     "about.stat2": "Années d'études",
     "about.stat3num": "Étudiant",
     "about.stat3": "En programmation",
-    "about.stat4num": "Passionné",
-    "about.stat4": "Par les systèmes performants",
 
     "skills.eyebrow": "compétences",
     "skills.title": "Langages et outils que j'utilise",
@@ -109,9 +107,7 @@ const translations = {
     "about.stat2": "Years of study",
     "about.stat3num": "Student",
     "about.stat3": "In programming",
-    "about.stat4num": "Passionate",
-    "about.stat4": "About performant systems",
-
+     
     "skills.eyebrow": "skills",
     "skills.title": "Languages and tools I use",
     "skills.langages": "Languages",
