@@ -368,7 +368,7 @@ h1,h2,h3{ font-family:var(--font-heading); margin:0; }
   border-radius:var(--radius-lg);
   padding:40px;
   display:grid;
-  grid-template-columns:1.3fr repeat(4, 1fr);
+  grid-template-columns:2fr repeat(3, 1fr);
   gap:32px;
   align-items:center;
 }
